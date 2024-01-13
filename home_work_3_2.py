@@ -15,15 +15,15 @@ def main():
     t = turtle.Turtle()
     t.speed(0)
 
-    # Встановлення рівня рекурсії
+    # Level of recursion
     recursion_level = int(input("Введіть рівень рекурсії для сніжинки Коха: "))
 
-    # Початкова позиція
+    # Start point
     t.penup()
     t.goto(-150, 90)
     t.pendown()
 
-    # Малювання сніжинки
+    # Drawing snowflake
     for i in range(3):
         koch_snowflake(t, recursion_level, 300)
         t.right(120)
